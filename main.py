@@ -18,7 +18,11 @@ def adjust_recipe(recipe, new_servings):
 
 if __name__ == '__main__':
     # Beispiel für die Datenstruktur eines Rezepts
-    recipe_json = '{"title": "Spaghetti Bolognese", "ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500}, "servings": 4}'
+    recipe_json = ('{'
+                   '"title": "Spaghetti Bolognese", '
+                   '"ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500}, '
+                   '"servings": 4'
+                   '}')
 
     # Rezept aus JSON laden
     recipe_object = load_recipe(recipe_json)
